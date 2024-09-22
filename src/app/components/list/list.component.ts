@@ -1,5 +1,6 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
+import { ProductsService } from '../../services/products.service';
+import { Product } from '../../interfaces/product.interface';
 
 @Component({
   selector: 'app-list',
@@ -9,12 +10,12 @@ import { Component, inject } from '@angular/core';
   styleUrl: './list.component.css'
 })
 export class ListComponent {
+  products: Product[] = [];
 
-  products: any[] = [];
-  httpClient = inject(HttpClient);
+  productsService = inject(ProductsService);
 
   ngOnInit(){
-    this.httpClient.get<any>('/api/products').subscribe((products)=>{
+    this.productsService.getAll().subscribe((products)=>{
       this.products = products;
     });
   }
