@@ -27,13 +27,13 @@ Este projeto é uma aplicação simples para gerenciar produtos, onde é possív
 
 1. Clone o repositório para sua máquina:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/Everton-Wallace-Oliveira/product-store.git
    ```
 
 2.Instale as dependências do projeto:
 
 ```
-  cd nome-do-repositorio
+  cd product-store
   npm install
 ```
 
