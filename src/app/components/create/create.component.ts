@@ -42,7 +42,7 @@ export class CreateComponent {
     }),
   });
 
-  onSubimit() {
+  onSubmit() {
     this.productsService.post({
       title: this.form.controls.title.value,
       quantidade: this.form.controls.quantidade.value

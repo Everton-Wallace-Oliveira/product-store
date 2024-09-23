@@ -46,7 +46,7 @@ export class EditComponent {
     }),
 
   });
-  onSubimit() {
+  onSubmit() {
     this.productsService.patch(this.product.id, {
       title: this.form.controls.title.value,
       quantidade: this.form.controls.quantidade.value

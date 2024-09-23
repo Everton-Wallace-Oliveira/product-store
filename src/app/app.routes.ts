@@ -1,6 +1,5 @@
 import { ActivatedRouteSnapshot, RouterStateSnapshot, Routes } from '@angular/router';
 import { ListComponent } from './components/list/list.component';
-import { Observable } from 'rxjs';
 import { inject } from '@angular/core';
 import { ProductsService } from './services/products.service';
 
