@@ -43,18 +43,12 @@ export class CreateComponent {
   });
 
   onSubimit() {
-
-
     this.productsService.post({
       title: this.form.controls.title.value,
       quantidade: this.form.controls.quantidade.value
     }).subscribe(()=>{
-      this.matSnackBar.open('Produto criado com sucesso!', 'Ok',{
-        duration:3000,
-        horizontalPosition: 'right',
-        verticalPosition: 'top'
-      })
-      this.router.navigateByUrl('/');
+      this.matSnackBar.open('Produto criado com sucesso!', 'Ok') // cria um pop-up estilizado
+      this.router.navigateByUrl('/');// volta para a home
     });
   }
 }
