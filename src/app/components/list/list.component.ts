@@ -5,14 +5,12 @@ import { CardComponent } from './card/card.component';
 import { Router, RouterLink } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 
-
-
 @Component({
   selector: 'app-list',
   standalone: true,
   imports: [CardComponent, RouterLink, MatButtonModule],
   templateUrl: './list.component.html',
-  styleUrl: './list.component.css'
+  styleUrl: './list.component.css',
 })
 export class ListComponent {
   products: Product[] = [];
@@ -21,13 +19,12 @@ export class ListComponent {
 
   productsService = inject(ProductsService);
 
-  ngOnInit(){
-    this.productsService.getAll().subscribe((products)=>{
+  ngOnInit() {
+    this.productsService.getAll().subscribe((products) => {
       this.products = products;
     }); //chamada de rota para listar todos os produtos
   }
-onEdit(){
-  this.router.navigateByUrl('/edit-product') // chamada de rota para editar um produto
-}
-
+  onEdit(product: Product) {
+    this.router.navigate(['/edit-product', product.id]); // chamada de rota para editar um produto
+  }
 }

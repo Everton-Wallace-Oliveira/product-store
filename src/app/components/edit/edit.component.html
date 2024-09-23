@@ -1,1 +1,23 @@
-<p>edit works!</p>
+<form [formGroup]="form" (ngSubmit)="onSubimit()" class="form-container">
+  <div class="form-content-container">
+    <mat-form-field>
+      <mat-label>Input</mat-label>
+      <input
+        type="text"
+        matInput
+        formControlName="title"
+        placeholder="Título"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Input</mat-label>
+      <input
+        type="text"
+        matInput
+        formControlName="quantidade"
+        placeholder="Quantidade"
+      />
+    </mat-form-field>
+    <button type="submit" mat-raised-button color="accent">Salvar</button>
+  </div>
+</form>
