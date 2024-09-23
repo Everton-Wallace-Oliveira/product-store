@@ -1,29 +1,14 @@
 {
   "products": [
     {
-      "id": "1",
-      "title": "Arrozes",
-      "quantidade": "8"
-    },
-    {
-      "id": "66dc",
-      "title": "agua",
-      "quantidade": "8"
-    },
-    {
-      "id": "05a5",
-      "title": "Acucar",
-      "quantidade": "4"
-    },
-    {
       "id": "86ed",
       "title": "Biscoito",
       "quantidade": "12"
     },
     {
-      "id": "627b",
-      "title": "feijao",
-      "quantidade": "2"
+      "id": "f196",
+      "title": "Água",
+      "quantidade": "10"
     }
   ]
 }
