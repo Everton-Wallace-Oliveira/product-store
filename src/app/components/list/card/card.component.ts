@@ -14,9 +14,14 @@ export class CardComponent {
   product = input.required<Product>()
 
   @Output() edit = new EventEmitter();//emiti um evento quando é clicado o editar na interface
+  @Output() delete = new EventEmitter();//emiti um evento quando é clicado o editar na interface
 
   productTitle = computed(()=> this.product().title);
   productQtd = computed(()=> this.product().quantidade);
+
+  onDelete() {
+    this.delete.emit();
+  }
 
 
 }
