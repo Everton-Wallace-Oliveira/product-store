@@ -11,7 +11,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { MatInputModule } from '@angular/material/input';
 import { ProductsService } from '../../services/products.service';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-create',
@@ -21,6 +21,7 @@ import { Router } from '@angular/router';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
+    RouterLink
   ],
   templateUrl: './create.component.html',
   styleUrl: './create.component.css',
