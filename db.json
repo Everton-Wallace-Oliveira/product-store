@@ -1,14 +1,9 @@
 {
   "products": [
     {
-      "id": "86ed",
-      "title": "Biscoito",
+      "id": "3982",
+      "title": "Feijao",
       "quantidade": "12"
-    },
-    {
-      "id": "f196",
-      "title": "Água",
-      "quantidade": "10"
     }
   ]
 }

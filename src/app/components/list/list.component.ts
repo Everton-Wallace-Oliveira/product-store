@@ -12,6 +12,7 @@ import {
   MatDialogRef,
   MatDialogTitle,
 } from '@angular/material/dialog';
+import { NoItemsComponent } from './no-items/no-items.component';
 
 @Component({
   selector: 'app-confirmation-dialog',
@@ -54,7 +55,7 @@ export class confirmationDialogComponent {
 @Component({
   selector: 'app-list',
   standalone: true,
-  imports: [CardComponent, RouterLink, MatButtonModule],
+  imports: [CardComponent, RouterLink, MatButtonModule, NoItemsComponent],
   templateUrl: './list.component.html',
   styleUrl: './list.component.css',
 })
