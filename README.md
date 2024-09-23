@@ -60,10 +60,10 @@ http://localhost:4200
 
 ### Ajustes e Melhorias
 
-- [x] Implementar autenticação de usuários para proteger certas ações (criar, editar, deletar);
-- [x] Adicionar paginação para lidar melhor com listas grandes de produtos;
-- [x] Implementar upload de imagens para os produtos;
-- [x] Substituir o JSON Server por uma API real com banco de dados.
+- [] Implementar autenticação de usuários para proteger certas ações (criar, editar, deletar);
+- [] Adicionar paginação para lidar melhor com listas grandes de produtos;
+- [] Implementar upload de imagens para os produtos;
+- [] Substituir o JSON Server por uma API real com banco de dados.
 
 ## SUPORTE AO USUÁRIO:
 - Para se conectar, entre em contato via email ou whatsapp:<br>
