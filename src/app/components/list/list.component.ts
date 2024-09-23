@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { ProductsService } from '../../services/products.service';
 import { Product } from '../../interfaces/product.interface';
 import { CardComponent } from './card/card.component';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 
 
@@ -17,11 +17,17 @@ import { MatButtonModule } from '@angular/material/button';
 export class ListComponent {
   products: Product[] = [];
 
+  router = inject(Router);
+
   productsService = inject(ProductsService);
 
   ngOnInit(){
     this.productsService.getAll().subscribe((products)=>{
       this.products = products;
-    });
+    }); //chamada de rota para listar todos os produtos
   }
+onEdit(){
+  this.router.navigateByUrl('/edit-product') // chamada de rota para editar um produto
+}
+
 }
