@@ -29,11 +29,16 @@ export class CreateComponent {
       nonNullable: true,
       validators: Validators.required,
     }),
+    quantidade: new FormControl<string>('', {
+      nonNullable: true,
+      validators: Validators.required,
+    }),
   });
 
   onSubimit() {
     this.productsService.post({
       title: this.form.controls.title.value,
+      quantidade: this.form.controls.quantidade.value
     }).subscribe(()=>{
       alert('Produto salvo com sucesso!')
     })

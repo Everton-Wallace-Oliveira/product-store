@@ -14,6 +14,8 @@ export class CardComponent {
   product = input.required<Product>()
 
   productTitle = computed(()=> this.product().title);
+  productQtd = computed(()=> this.product().quantidade);
+
 
 }
 

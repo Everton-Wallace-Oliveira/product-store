@@ -2,11 +2,18 @@
   "products": [
     {
       "id": "1",
-      "title": "Produto de Teste"
+      "title": "Arroz",
+      "quantidade": "5"
     },
     {
       "id": "66dc",
-      "title": "agua"
+      "title": "agua",
+      "quantidade": "8"
+    },
+    {
+      "id": "05a5",
+      "title": "Acucar",
+      "quantidade": "4"
     }
   ]
 }
