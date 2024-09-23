@@ -1,27 +1,87 @@
 # ProductStore
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+Este projeto é uma aplicação simples para gerenciar produtos, onde é possível criar, editar, listar e deletar produtos de forma fácil e rápida. A aplicação foi construída usando Angular 17 para o front-end e JSON Server para simular uma API no back-end.
 
-## Development server
+## Funcionalidades
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Listar produtos
+- Criar novos produtos
+- Editar produtos existentes
+- Deletar produtos
 
-## Code scaffolding
+## Tecnologias Utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular 17**: Utilizado para o desenvolvimento do front-end.
+- **JSON Server**: Simula uma API REST para a aplicação.
+- **HTML5/CSS3**: Estruturação e estilização das páginas.
+- **TypeScript**: Linguagem utilizada no desenvolvimento com Angular.
 
-## Build
+## Como Executar a Aplicação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Pré-requisitos
 
-## Running unit tests
+- Node.js instalado em sua máquina.
+- npm (gerenciador de pacotes do Node.js) instalado.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Passos
 
-## Running end-to-end tests
+1. Clone o repositório para sua máquina:
+   ```bash
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2.Instale as dependências do projeto:
 
-## Further help
+```
+  cd nome-do-repositorio
+  npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3.Inicie o JSON Server:
+
+```
+npm run json-server
+
+```
+
+4.Inicie o servidor do Angular:
+
+```
+ng serve
+
+```
+
+5.Abra o navegador e acesse:
+
+```
+http://localhost:4200
+
+```
+
+### Ajustes e Melhorias
+
+- [x] Implementar autenticação de usuários para proteger certas ações (criar, editar, deletar);
+- [x] Adicionar paginação para lidar melhor com listas grandes de produtos;
+- [x] Implementar upload de imagens para os produtos;
+- [x] Substituir o JSON Server por uma API real com banco de dados.
+
+## SUPORTE AO USUÁRIO:
+- Para se conectar, entre em contato via email ou whatsapp:<br>
+   &nbsp;Wpp: +55 (71) 9 99125-6394 (também atende ligações).<br>
+    &nbsp;Email: everton542@hotmail.com
+
+## 🤝 Colaboradores:
+
+Agradecemos às seguintes pessoas que contribuíram para este projeto:
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/everton-oliveira-b02a85150/">
+        <img src="img/perfilEverton.jfif" width="100px;" alt="Foto de Everton Oliveira"/><br>
+        <sub>
+          <b>Everton Oliveira - 26 anos, superior incompleto.</b>
+        </sub>
+      </a>
+    </td>
+</table>
